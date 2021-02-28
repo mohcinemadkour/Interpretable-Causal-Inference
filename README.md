@@ -6,6 +6,9 @@ Interests
 - Bayesian Nonparametrics     
 - Generalized Bayes
 
-I use The dame-flame package, the package offers  efficient,  easy-to-use  implementations  of  the  DAME  andFLAME algorithms, allowing users to perform fast, interpretable matching for causal infer-ence for observational data with discrete covariates.
+I use The dame-flame package, the package offers  efficient,  easy-to-use  implementations  of  the  DAME  andFLAME algorithms, allowing users to perform fast, interpretable matching for causal infer-ence for observational data with discrete covariates. The package uses 2 different algos to generate the matches:
+
+- FLAME “Fast Large-Scale Almost Matching Exactly” algorithm
+- DAME “Dynamic Almost Matching Exactly” algorithm
 
 The advantage of matchingis  that  it  reduces  bias  of  treatment  effect  estimates,  and  permits  interpretable  analysesthat are easier to troubleshoot than other types of analysis for observational causal studies
