@@ -1,9 +1,6 @@
 # Interpretable-Causal-Inference
 
-The purpose of this project is to create methods in causal inference and Bayesian nonparametrics that: 
-- 1. can be used in practice, featuring scalable implementations that facilitate their application to real data; 
-- 2. are designed to handle the complexity inherent in real data without making naive assumptions; and 
-- 3. have exceptional predictive accuracy, even as they boast other desirable features like interpretability and uncertainty quantification. 
+
 
 I use The dame-flame package, the package offers efficient,  easy-to-use  implementations  of  the  DAME  andFLAME algorithms, allowing users to perform fast, interpretable matching for causal infer-ence for observational data with discrete covariates. The package uses 2 different algos to generate the matches:
 
@@ -14,4 +11,6 @@ The advantage of matchingis  is that  it  reduces  bias  of  treatment  effect  
 
 ## Notions: Cause - effect - treatment - control 
 
-## Types of analysis for observational causal studies
+## Matching based analysis for observational causal studies
+
+Matching methods are heavily used in the social and health sciences due to their interpretability. We aim to create the highest possible quality of treatment-control matches for categorical data in the potential outcomes framework. The method proposed in this work aims to match units on a weighted Hamming distance, taking into account the relative importance of the covariates; the algorithm aims to match units on as many relevant variables as possible. To do this, the algorithm creates a hierarchy of covariate combinations on which to match (similar to downward closure), in the process solving an optimization problem for each unit in order to construct the optimal matches. The algorithm uses a single dynamic program to solve all of the units’ optimization problems simultaneously. Notable advantages of our method over existing matching procedures are its high-quality interpretable matches, versatility in handling different data distributions that may have irrelevant variables, and ability to handle missing data by matching on as many available covariates as possible. 
